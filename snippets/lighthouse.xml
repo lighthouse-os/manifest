@@ -24,10 +24,31 @@
   </project>
   <project path="bionic" name="bionic" remote="lighthouse"/>
   <project path="build/blueprint" name="build_blueprint" remote="lighthouse"/>
+
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lighthouse" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="lighthouse" />
+
+  <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" remote="lighthouse"/>
+  <project path="frameworks/av" name="frameworks_av" remote="lighthouse" />
+
+  <!-- External -->
+  <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse"/>
+
+  <!-- System -->
   <project path="system/core" name="system_core" remote="lighthouse"/>
   <project path="system/vold" name="system_vold" remote="lighthouse"/>  
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="lighthouse"/>
   
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lighthouse" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="lighthouse"/>
+
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
 

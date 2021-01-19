@@ -2,19 +2,15 @@
 <manifest>
 
   <remote name="pe"
-          fetch="https://github.com/peExperience"
+          fetch="https://github.com/PixelExperience"
           revision="eleven"
           review="gerrit.peexperience.org" />
 
   <remote name="pe-gitlab"
-          fetch="https://gitlab.com/peExperience"
+          fetch="https://gitlab.com/PixelExperience"
           revision="eleven" />
 
   <!-- CodeAurora additions -->
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pe" />
-  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="pe" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pe" />
-  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="pe" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pe">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
