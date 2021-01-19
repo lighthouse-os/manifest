@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="lighthouse"
+           fetch="https://github.com/lighthouse-os"
+           revision="raft" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <!-- Build repositories -->
+  <project path="build/make" name="build" remote="lighthouse" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="lighthouse" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="bionic" remote="lighthouse"/>
+  <project path="build/blueprint" name="build_blueprint" remote="lighthouse"/>
+  <project path="frameworks/base" name="frameworks_base" remote="lighthouse"/>
+  <project path="system/core" name="system_core" remote="lighthouse"/>
+  <project path="system/vold" name="system_vold" remote="lighthouse"/>  
+  
+  <!-- Vendor -->
+  <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
+
+</manifest>
