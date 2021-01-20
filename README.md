@@ -16,13 +16,13 @@ bash setup/android_build_env.sh
 To initialize your local repository, use a command like this:
 
 ```bash
-repo init -u https://github.com/lighthouse-os/manifest.git -b raft
+repo init -u git://github.com/lighthouse-os/manifest.git -b raft
 
 ```
 You can alternatively use this command to save some space and time :
 
 ```bash
-repo init --depth=1 -u https://github.com/lighthouse-os/manifest.git -b raft
+repo init --depth=1 -u git://github.com/lighthouse-os/manifest.git -b raft
 
 ```
 
@@ -50,10 +50,10 @@ $ mka lighthouse
  Team Project Lighthouse
  ===============
 
- * [**CannedShroud(Vyom Desai)**](https://t.me/CannedShroudted) - Core Developer
- * [**galanteria01(Shoury Sharma)**](https://t.me/galanteria01) - Core Developer
- * [**rohit12043(Rohit Sinha)**](https://t.me/rohit12043) - Core Developer
- * [**Stealth1226(Stealth)**](https://t.me/Stealth1226) - Core Developer
+ * [**Vyom Desai (CannedShroud)**](https://t.me/CannedShroudted) - Core Developer
+ * [**Shoury Sharma (galanteria01)**](https://t.me/galanteria01) - Core Developer
+ * [**Rohit Sinha (rohit12043)**](https://t.me/rohit12043) - Core Developer
+ * [**Rishawn Iyer (Stealth1226)**](https://t.me/Stealth1226) - Core Developer
 
  
 ---------------------------------------------------------------------------------------
