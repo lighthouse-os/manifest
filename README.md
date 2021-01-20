@@ -44,7 +44,7 @@ From root directory of project, perform following commands in terminal
 ```bash
 $ . build/envsetup.sh
 $ lunch lighthouse_<device_codename>-eng
-$ mka lighthouse
+$ m lighthouse-ota
 ```
 ---------------------------------------------------------------------------------------
  Team Project Lighthouse
