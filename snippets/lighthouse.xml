@@ -24,6 +24,7 @@
   </project>
   <project path="bionic" name="bionic" remote="lighthouse"/>
   <project path="build/blueprint" name="build_blueprint" remote="lighthouse"/>
+  <project path="bootable/recovery" name="bootable_recovery" remote="lighthouse"/>
 
   <!-- Device -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" />
