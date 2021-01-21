@@ -36,6 +36,7 @@
 
   <!-- External -->
   <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse"/>
+  <project path="external/selinux" name="external_selinux" remote="lighthouse"/>
 
   <!-- System -->
   <project path="system/core" name="system_core" remote="lighthouse"/>
