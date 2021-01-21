@@ -51,6 +51,5 @@
 
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
-  <project path="vendor/lighthouse-ui" name="vendor_lighthouse-ui" remote="lighthouse" />
 
 </manifest>
