@@ -93,5 +93,6 @@
   <remove-project name="platform/packages/apps/Settings"/>
   <remove-project name="platform/packages/apps/Launcher3"/>
   <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/external/sqlite" />
 
 </manifest>
