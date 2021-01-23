@@ -59,6 +59,7 @@
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="lighthouse"/>
+  <project path="hardware/lighthouse/interfaces" name="hardware_lighthouse_interfaces" remote="lighthouse"/>
   
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lighthouse" />
