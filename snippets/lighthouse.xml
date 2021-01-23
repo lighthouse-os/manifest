@@ -43,6 +43,7 @@
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" remote="lighthouse"/>
   <project path="frameworks/av" name="frameworks_av" remote="lighthouse" />
+  <project path="frameworks/native" name="frameworks_native" remote="lighthouse" />
 
   <!-- External -->
   <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse"/>
@@ -53,6 +54,7 @@
   <!-- System -->
   <project path="system/core" name="system_core" remote="lighthouse"/>
   <project path="system/vold" name="system_vold" remote="lighthouse"/>  
+  <project path="system/sepolicy" name="system_sepolicy" remote="lighthouse"/>  
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
