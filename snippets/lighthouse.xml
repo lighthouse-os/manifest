@@ -55,6 +55,7 @@
   <project path="system/core" name="system_core" remote="lighthouse"/>
   <project path="system/vold" name="system_vold" remote="lighthouse"/>  
   <project path="system/sepolicy" name="system_sepolicy" remote="lighthouse"/>  
+  <project path="system/bt" name="system_bt" remote="lighthouse"/>  
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
@@ -64,6 +65,8 @@
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lighthouse" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="lighthouse"/>
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="lighthouse"/>
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="lighthouse"/>
 
   <!-- Prebuilts -->
   <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" clone-depth="1" remote="tos" />
