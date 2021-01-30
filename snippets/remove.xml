@@ -90,6 +90,7 @@
   <remove-project name="platform/system/bt"/>
   <remove-project name="platform/packages/apps/Bluetooth"/>
   <remove-project name="platform/packages/apps/Dialer"/>
+  <remove-project name="platform/packages/services/Telecomm"/>
   <remove-project name="platform/external/tinycompress"/>
   <remove-project name="platform/external/e2fsprogs"/>
   <remove-project name="platform/external/selinux"/>
