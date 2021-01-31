@@ -15,6 +15,10 @@
            fetch="https://github.com/TitaniumOS"
            revision="refs/heads/eleven" />
 
+  <remote name="tos-gitlab" 
+           fetch="https://gitlab.com/SonalSingh18"
+           revision="refs/heads/eleven" />
+
   <!-- Build repositories -->
   <project path="build/make" name="build" remote="lighthouse" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -76,5 +80,6 @@
 
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
-
+  <project path="vendor/google/gms" name="vendor_google_gms" remote="tos-gitlab" />
+  
 </manifest>
