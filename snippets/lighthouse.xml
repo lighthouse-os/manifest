@@ -4,7 +4,12 @@
   <remote  name="lighthouse"
            fetch="https://github.com/lighthouse-os"
            revision="raft" />
-<remote  name="lighthouse-devices"
+
+  <remote  name="lighthouse-gitlab"
+           fetch="https://gitlab.com/Stealth1226"
+           revision="eleven" />
+
+  <remote  name="lighthouse-devices"
            fetch="https://github.com/lighthouse-os-devices"
            revision="raft" />
 
@@ -76,5 +81,6 @@
 
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="lighthouse" />
 
 </manifest>
