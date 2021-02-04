@@ -81,6 +81,6 @@
 
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="lighthouse" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="lighthouse-gitlab" />
 
 </manifest>
