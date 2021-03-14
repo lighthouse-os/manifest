@@ -17,5 +17,6 @@
 
   <!-- Packages -->
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pe"/>
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe"/>
 
   </manifest>
