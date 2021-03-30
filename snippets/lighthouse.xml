@@ -9,7 +9,7 @@
            fetch="https://gitlab.com/Stealth1226"
            revision="eleven" />
 
-  <remote  name="lighthouse-devices"
+  <remote  name="lighthouse-os-devices"
            fetch="https://github.com/lighthouse-os-devices"
            revision="raft" />
 
