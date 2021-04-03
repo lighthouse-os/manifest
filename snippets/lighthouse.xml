@@ -78,6 +78,7 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lighthouse"/>
 
   <!-- Prebuilts -->
+  <project path="prebuilts/apps/Lawnchair" name="prebuilts_apps_Lawnchair" clone-depth="1" remote="lighthouse" />
   <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" clone-depth="1" remote="tos" />
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
 
