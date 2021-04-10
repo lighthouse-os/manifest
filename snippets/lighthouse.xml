@@ -20,6 +20,9 @@
            fetch="https://github.com/TitaniumOS"
            revision="refs/heads/eleven" />
 
+  <!-- Narcisism -->
+  <project path="manifest" name="manifest" remote="lighthouse"/>
+
   <!-- Build repositories -->
   <project path="build/make" name="build" remote="lighthouse" >
     <copyfile src="core/root.mk" dest="Makefile" />
