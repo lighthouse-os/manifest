@@ -80,6 +80,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="lighthouse"/>
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="lighthouse"/>
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lighthouse"/>
+  <project path="packages/services/ThemePicker" name="packages_services_ThemePicker" remote="lighthouse"/>
 
   <!-- Prebuilts -->
   <project path="prebuilts/apps/Lawnchair" name="prebuilts_apps_Lawnchair" clone-depth="1" remote="lighthouse" />
