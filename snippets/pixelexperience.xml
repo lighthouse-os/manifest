@@ -16,7 +16,6 @@
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" remote="pe" clone-depth="1" />
 
   <!-- Packages -->
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pe"/>
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe"/>
 
   </manifest>
