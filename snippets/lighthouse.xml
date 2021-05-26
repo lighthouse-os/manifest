@@ -66,6 +66,8 @@
   <project path="system/vold" name="system_vold" remote="lighthouse"/>  
   <project path="system/sepolicy" name="system_sepolicy" remote="lighthouse"/>  
   <project path="system/bt" name="system_bt" remote="lighthouse"/>  
+  <project path="system/netd" name="system_netd" remote="lighthouse"/>  
+
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
