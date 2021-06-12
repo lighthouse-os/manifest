@@ -67,7 +67,7 @@
   <project path="system/sepolicy" name="system_sepolicy" remote="lighthouse"/>  
   <project path="system/bt" name="system_bt" remote="lighthouse"/>  
   <project path="system/netd" name="system_netd" remote="lighthouse"/>  
-
+  <project path="system/update_engine" name="system_update_engine" remote="lighthouse"/>
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
@@ -82,6 +82,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="lighthouse"/>
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="lighthouse"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="lighthouse"/>
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="lighthouse"/>
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lighthouse"/>
 
   <!-- Prebuilts -->
