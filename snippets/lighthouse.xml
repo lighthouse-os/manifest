@@ -83,6 +83,7 @@
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="lighthouse"/>
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="lighthouse"/>
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="lighthouse"/>
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="lighthouse"/>
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lighthouse"/>
 
   <!-- Prebuilts -->
