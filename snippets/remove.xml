@@ -105,6 +105,8 @@
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/cpu_features" />
+  <remove-project name="platform/external/zlib" />
   <remove-project name="platform/art" />
 
 </manifest>
