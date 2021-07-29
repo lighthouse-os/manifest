@@ -38,6 +38,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="bionic" name="bionic" remote="lighthouse"/>
+  <project path="art" name="art" remote="lighthouse"/>
   <project path="build/blueprint" name="build_blueprint" remote="lighthouse"/>
   <project path="bootable/recovery" name="bootable_recovery" remote="lighthouse"/>
 
@@ -62,6 +63,8 @@
   <project path="external/faceunlock" name="external_faceunlock" remote="lighthouse" />
   <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="lighthouse" />
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="lighthouse" />
+  <project path="external/cpu_features" name="external_cpu_features" remote="lighthouse" />
+  <project path="external/zlib" name="ProtonAOSP/android_external_zlib-ng" remote="github" revision="rvc" />
 
   
   <!-- System -->
