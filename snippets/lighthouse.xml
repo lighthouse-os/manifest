@@ -7,7 +7,7 @@
 
   <remote  name="lighthouse-gitlab"
            fetch="https://gitlab.com/Stealth1226"
-           revision="eleven" />
+           revision="raft" />
 
   <remote  name="lighthouse-os-devices"
            fetch="https://github.com/lighthouse-os-devices"
