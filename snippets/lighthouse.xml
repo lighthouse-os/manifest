@@ -91,6 +91,7 @@
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="lighthouse"/>
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lighthouse"/>
   <project path="packages/apps/CustomDoze" name="packages_apps_CustomDoze" remote="lighthouse"/>
+  <project path="packages/apps/GamingMode" name="packages_apps_GamingMode" remote="lighthouse"/>
 
   <!-- Prebuilts -->
   <project path="prebuilts/apps/Lawnchair" name="prebuilts_apps_Lawnchair" clone-depth="1" remote="lighthouse" />
