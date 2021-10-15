@@ -8,6 +8,8 @@
   <remote  name="github"
            fetch="https://github.com/" />
 
+  <remote  name="proton"
+           fetch="https://github.com/protonaosp" />
 
  <!-- Build repositories -->
   <project path="build/make" name="build" remote="lighthouse" >
@@ -24,19 +26,31 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- SEPolicy -->
   <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" revision="raft" />
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="lighthouse" revision="raft" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lighthouse" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="lighthouse" revision="raft" />
+  
+  
+  <!-- Codeaurora additions -->
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lighthouse" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="lighthouse" />
-  <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse" />
+  
+  <!-- Lighthouse additions -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="lighthouse" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
   <project path="bionic" name="bionic" remote="lighthouse" />
   <project path="system/core" name="system_core" remote="lighthouse" />
+
+  <!-- Framework repos -->
   <project path="frameworks/base" name="frameworks_base" remote="lighthouse" />
   <project path="frameworks/av" name="frameworks_av" remote="lighthouse" />
+
+  <!-- External repos -->
+  <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse" />
+  <project path="external/colorkt" name="android_external_colorkt" remote="proton" />
+  <project path="external/themelib" name="android_external_themelib" remote="proton" />
 </manifest> 
