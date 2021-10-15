@@ -9,7 +9,17 @@
            fetch="https://github.com/" />
 
   <remote  name="proton"
-           fetch="https://github.com/protonaosp" />
+           fetch="https://github.com/protonaosp"
+           revision="sc" />
+
+  <remote  name="lighthouse-gitlab"
+           fetch="https://gitlab.com/Stealth1226"
+           revision="sailboat" />
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-12.0" />
 
  <!-- Build repositories -->
   <project path="build/make" name="build" remote="lighthouse" >
@@ -25,32 +35,50 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="bionic" name="bionic" remote="lighthouse"/>
 
-  <!-- SEPolicy -->
-  <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" />
+  <!-- Device -->
+  <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" revision="raft" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" revision="raft" />
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="lighthouse" revision="raft" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lighthouse" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lighthouse" revision="raft" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="lighthouse" revision="raft" />
-  
-  
-  <!-- Codeaurora additions -->
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lighthouse" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="lighthouse" />
-  
-  <!-- Lighthouse additions -->
-  <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="lighthouse" />
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
-  <project path="bionic" name="bionic" remote="lighthouse" />
-  <project path="system/core" name="system_core" remote="lighthouse" />
+  <project path="device/official" name="official_devices" remote="lighthouse" revision="main" />
 
-  <!-- Framework repos -->
-  <project path="frameworks/base" name="frameworks_base" remote="lighthouse" />
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" remote="lighthouse"/>
   <project path="frameworks/av" name="frameworks_av" remote="lighthouse" />
+  <project path="frameworks/native" name="frameworks_native" remote="lighthouse" />
 
   <!-- External repos -->
   <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse" />
   <project path="external/colorkt" name="android_external_colorkt" remote="proton" />
   <project path="external/themelib" name="android_external_themelib" remote="proton" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
+  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="arrow" revision="arrow-12.0-caf" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="arrow" revision="arrow-12.0-caf"/>
+ 
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lighthouse" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="lighthouse" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="lighthouse"/>
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="lighthouse"/>
+
+  <!-- System repos -->
+  <project path="system/core" name="system_core" remote="lighthouse"/>
+
+  <!-- Vendor -->
+  <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="lighthouse-gitlab" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lighthouse" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="lighthouse" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
+
 </manifest> 
