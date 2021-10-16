@@ -64,5 +64,7 @@
 
   <!-- System -->
   <remove-project name="platform/system/core" />
-  
+
+  <!-- Libcore -->  
+  <remove-project name="platform/libcore" />
 </manifest> 
