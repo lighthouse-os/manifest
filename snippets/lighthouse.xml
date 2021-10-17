@@ -76,7 +76,7 @@
 
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
-  <project path="vendor/gms" name="vendor_gapps" remote="lighthouse-gitlab" />
+  <project path="vendor/gms" name="vendor_gapps" remote="lighthouse-gitlab" clone-depth="1" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="lighthouse" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="lighthouse" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
