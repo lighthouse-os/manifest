@@ -38,11 +38,10 @@
   <project path="bionic" name="bionic" remote="lighthouse"/>
 
   <!-- Device -->
-  <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" revision="raft" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" revision="raft" />
-  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="lighthouse" revision="raft" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lighthouse" revision="raft" />
-  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="lighthouse" revision="raft" />
+  <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" />
+  <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrow" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="arrow" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="arrow" />
   <project path="device/official" name="official_devices" remote="lighthouse" revision="main" />
 
   <!-- Frameworks -->
@@ -54,6 +53,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse" />
   <project path="external/colorkt" name="android_external_colorkt" remote="proton" />
   <project path="external/themelib" name="android_external_themelib" remote="proton" />
+  <project path="external/selinux" name="external_selinux" remote="lighthouse" />
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
@@ -73,6 +73,7 @@
 
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="lighthouse"/>
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="lighthouse" />
 
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
