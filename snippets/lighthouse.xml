@@ -75,6 +75,7 @@
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="lighthouse"/>
   <project path="system/sepolicy" name="android_system_sepolicy" remote="lighthouse" />
+  <project path="system/update_engine" name="system_update_engine" remote="lighthouse" />
 
   <!-- Vendor -->
   <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" />
