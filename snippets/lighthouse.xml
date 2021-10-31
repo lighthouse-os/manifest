@@ -36,6 +36,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="bionic" name="bionic" remote="lighthouse"/>
+  <project path="manifest" name="manifest" remote="lighthouse" />
 
   <!-- Device -->
   <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" />
