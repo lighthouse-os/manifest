@@ -40,9 +40,8 @@
 
   <!-- Device -->
   <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" />
-  <project path="device/arrow/sepolicy" name="android_device_arrow_sepolicy" remote="arrow" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="arrow" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="arrow" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="lighthouse" />
   <project path="device/official" name="official_devices" remote="lighthouse" revision="main" />
 
   <!-- Frameworks -->
