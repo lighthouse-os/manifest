@@ -1,4 +1,4 @@
- ![LighthouseOS](https://raw.githubusercontent.com/lighthouse-os/manifest/raft/lighthouse.png)
+ ![LighthouseOS](https://raw.githubusercontent.com/lighthouse-os/manifest/sailboat/lighthouse.png)
 
  Getting Started:
  ==============
