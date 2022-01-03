@@ -17,4 +17,6 @@
   <!-- Vendor -->
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="pe" revision="twelve" />
 
+  <!-- Hardware -->
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pe" revision="twelve" />
   </manifest>
