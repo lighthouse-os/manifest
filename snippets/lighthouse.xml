@@ -58,6 +58,7 @@
   <project path="external/selinux" name="external_selinux" remote="lighthouse" />
   <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="lighthouse" />
   <project path="external/sqlite" name="external_sqlite" remote="lighthouse" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="proton" />
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
