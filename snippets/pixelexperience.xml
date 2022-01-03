@@ -19,4 +19,9 @@
 
   <!-- Hardware -->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pe" revision="twelve" />
+
+  <!-- Device -->
+  <project path="device/qcom-LA.UM.10.3.r1-xxxxx-sdm845.0/sepolicy" name="device_qcom_sepolicy" remote="pe" revision="twelve-LA.UM.10.3.r1-xxxxx-sdm845.0" />
+  <project path="device/qcom-LA.UM.10.3.r1-xxxxx-sdm845.0/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="pe" revision="twelve-LA.UM.10.3.r1-xxxxx-sdm845.0" />
+
   </manifest>
