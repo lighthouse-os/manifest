@@ -95,6 +95,7 @@
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
   <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="arrow" />
   <project path="vendor/support" name="vendor_support" remote="lighthouse" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="arrow" />
 
   <!-- The other guys -->
   <project path="art" name="art" remote="lighthouse" />
