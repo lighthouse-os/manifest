@@ -16,12 +16,12 @@ bash setup/android_build_env.sh
 To initialize your local repository, use a command like this:
 
 ```bash
-repo init -u git://github.com/lighthouse-os/manifest.git -b sailboat;
+repo init -u https://github.com/lighthouse-os/manifest.git -b sailboat;
 ```
 You can alternatively use this command to save some space and time :
 
 ```bash
-repo init --depth=1 -u git://github.com/lighthouse-os/manifest.git -b sailboat;
+repo init --depth=1 -u https://github.com/lighthouse-os/manifest.git -b sailboat;
 ```
 
 Then to sync up:
