@@ -81,8 +81,7 @@
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="lighthouse"/>
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="proton"/>
   <project path="packages/apps/Supplies" name="packages_apps_Supplies" remote="lighthouse" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="lighthouse" />
-
+  
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="lighthouse"/>
   <project path="system/sepolicy" name="android_system_sepolicy" remote="lighthouse" />
