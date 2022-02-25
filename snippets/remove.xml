@@ -49,6 +49,8 @@
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/interfaces" />
+
 
   <!-- GCC -->
   <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
@@ -69,6 +71,8 @@
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/modules/Connectivity" />
+  <remove-project name="platform/packages/services/Telecomm" />
+
 
   <!-- System -->
   <remove-project name="platform/system/core" />
