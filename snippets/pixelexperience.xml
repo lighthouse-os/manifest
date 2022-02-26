@@ -3,28 +3,27 @@
 
   <remote name="pe"
           fetch="https://github.com/PixelExperience"
-          revision="eleven"
+          revision="twelve"
           review="gerrit.peexperience.org" />
 
   <remote name="pixel-gitlab-self-hosted"
           fetch="https://gitlab.pixelexperience.org/android"
           revision="twelve" />
 
-  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" groups="qcom,qcom_audio" remote="pe" revision="twelve" />
-  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" remote="pe" revision="twelve" />
-  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" groups="qcom" remote="pe" revision="twelve" />
 
-
-  <! -- External repos -->
+  <!-- External repos -->
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
 
   <!-- Hardware -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pe" revision="twelve" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pe" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" groups="qcom,qcom_audio" remote="pe" />
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" remote="pe" />
+  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" groups="qcom" remote="pe" />
 
   <!-- Device -->
   <project path="device/qcom-LA.UM.10.3.r1-xxxxx-sdm845.0/sepolicy" name="device_qcom_sepolicy" remote="pe" revision="twelve-LA.UM.10.3.r1-xxxxx-sdm845.0" />
   <project path="device/qcom-LA.UM.10.3.r1-xxxxx-sdm845.0/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="pe" revision="twelve-LA.UM.10.3.r1-xxxxx-sdm845.0" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe" revision="twelve" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe" />
   </manifest>
