@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Bionic --> 
+  <remove-project name="platform/bionic" />
+
+  <!-- Build -->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  
+  <!-- Device -->
+  <remove-project name="device/common" />
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/art" />
+  <remove-project name="device/generic/car" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/opengl-transport" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/trusty" />
+  <remove-project name="device/generic/uml" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google_car" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/fuchsia" />
+  <remove-project name="device/google/trout" />
+  <remove-project name="device/google/vrservices" />
+  <remove-project name="device/sample" />
+
+  <!-- External repos -->
+  <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <remove-project name="platform/external/tinycompress" />
+
+  <!-- Hardware repos -->
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/bt" />
+  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/libhardware" />
+
+  <!-- GCC -->
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/native" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <remove-project name="platform/packages/apps/Nfc" />
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/media" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/update_engine" />
+
+  <!-- The other guys -->  
+  <remove-project name="platform/libcore" />
+  <!-- remove-project name="platform/art" / -->
+</manifest> 

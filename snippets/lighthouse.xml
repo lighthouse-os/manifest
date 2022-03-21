@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="lighthouse"
+           fetch="https://github.com/lighthouse-os"
+           revision="sailboat_L1" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="proton"
+           fetch="https://github.com/protonaosp"
+           revision="sc" />
+
+  <remote  name="lighthouse-gitlab"
+           fetch="https://gitlab.com/Stealth1226"
+           revision="sailboat" />
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-12.0" />
+
+ <!-- Build repositories -->
+  <project path="build/make" name="build" remote="lighthouse" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="lighthouse" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="bionic" remote="lighthouse"/>
+  <project path="manifest" name="manifest" remote="lighthouse" />
+
+  <!-- Device -->
+  <project path="device/lighthouse/sepolicy" name="device_lighthouse_sepolicy" remote="lighthouse" revision="sailboat"/>
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="lighthouse" revision="sailboat"/>
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="lighthouse" revision="sailboat" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lighthouse" revision="sailboat"/>
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="lighthouse" revision="sailboat"/>
+  <project path="device/official" name="official_devices" remote="lighthouse" revision="sailboat"/>
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" remote="lighthouse"/>
+  <project path="frameworks/av" name="frameworks_av" remote="lighthouse" />
+  <project path="frameworks/native" name="frameworks_native" remote="lighthouse" />
+
+  <!-- External repos -->
+  <project path="external/tinycompress" name="external_tinycompress" remote="lighthouse" revision="sailboat"/>
+  <project path="external/selinux" name="external_selinux" remote="lighthouse" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="proton" />
+  <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="arrow" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845 and sm8150, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <!--linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" /-->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996-LA.UM.9.6.2.r1-04100-89xx.0/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996-LA.UM.9.6.2.r1-04100-89xx.0/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/nxp/Android.bp" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/msm8996-LA.UM.9.6.2.r1-04100-89xx.0/audio" name="PixelExperience/hardware_qcom-caf_msm8996_audio" remote="github" revision="twelve-LA.UM.9.6.2.r1-04100-89xx.0" />
+  <project path="hardware/qcom-caf/msm8996-LA.UM.9.6.2.r1-04100-89xx.0/display" name="PixelExperience/hardware_qcom-caf_msm8996_display" remote="github" revision="twelve-LA.UM.9.6.2.r1-04100-89xx.0" />
+  <project path="hardware/qcom-caf/msm8996-LA.UM.9.6.2.r1-04100-89xx.0/media" name="PixelExperience/hardware_qcom-caf_msm8996_media" remote="github" revision="twelve-LA.UM.9.6.2.r1-04100-89xx.0" />
+  <project path="hardware/qcom-caf/sdm660/media" name="android_hardware_qcom_media" groups="qcom,qcom_media" remote="arrow" revision="arrow-12.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" groups="qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sdm660" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sdm845" />
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sdm845" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-msm8998" />
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="arrow" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="arrow" revision="arrow-12.0-caf"/>
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="lighthouse" />
+  <project path="hardware/lighthouse/interfaces" name="hardware_lighthouse_interfaces" remote="lighthouse" />
+ 
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lighthouse" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="lighthouse" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="lighthouse"/>
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="proton" />
+  <project path="packages/apps/GmsCompat" name="android_packages_apps_GmsCompat" remote="proton" />
+  <project path="packages/apps/Supplies" name="packages_apps_Supplies" remote="lighthouse"/>
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="lighthouse" revision="sailboat"/>
+  <project path="packages/apps/GamingMode" name="packages_apps_GamingMode" remote="lighthouse" revision="sailboat"/>
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="lighthouse" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="arrow" />
+
+  <!-- System repos -->
+  <project path="system/core" name="system_core" remote="lighthouse"/>
+  <project path="system/media" name="system_media" remote="lighthouse" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="lighthouse" />
+  <project path="system/update_engine" name="system_update_engine" remote="lighthouse" />
+
+  <!-- Vendor -->
+  <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" revision="sailboat"/>
+  <project path="vendor/gms" name="vendor_gapps" remote="lighthouse-gitlab" clone-depth="1" revision="sailboat_L1" />
+  <project path="vendor/support" name="vendor_support" remote="lighthouse" revision="sailboat"/> 
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="arrow" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="arrow" revision="arrow-12.0-pn5xx" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="arrow" revision="arrow-12.0-pn5xx" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="arrow" revision="arrow-12.0-sn100x" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="arrow" revision="arrow-12.0-sn100x" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arrow" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="arrow" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="android_vendor_qcom_opensource_fm-commonsys" remote="arrow" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="arrow"/>
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="arrow" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="arrow" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="arrow" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="arrow" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arrow" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="arrow" />
+
+  <!-- The other guys -->
+  <!-- project path="art" name="art" remote="lighthouse" / -->
+  <project path="libcore" name="libcore" remote="lighthouse"/>
+
+</manifest> 
