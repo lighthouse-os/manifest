@@ -133,7 +133,7 @@
   <project path="system/update_engine" name="system_update_engine" remote="lighthouse" />
 
   <!-- Vendor -->
-  <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" revision="sailboat"/>
+  <project path="vendor/lighthouse" name="vendor_lighthouse" remote="lighthouse" revision="sailboat_L1"/>
   <project path="vendor/gms" name="vendor_gapps" remote="lighthouse-gitlab" clone-depth="1" revision="sailboat_L1" />
   <project path="vendor/support" name="vendor_support" remote="lighthouse" revision="sailboat"/> 
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
