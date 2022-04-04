@@ -26,4 +26,9 @@
 
   <!-- Packages repos -->
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pe" />
+
+  <!-- Telephony -->
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pe" />
+  <project path="packages/services/telephony" name="packages_services_Telephony" remote="pe" />
+  
   </manifest>
