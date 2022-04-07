@@ -21,6 +21,10 @@
            review="https://review.arrowos.net/"
            revision="refs/heads/arrow-12.0" />
 
+  <remote name="ppui-caf"
+          fetch="https://github.com/PixelPlusUI-CAF"
+          revision="sv2" />
+
  <!-- Build repositories -->
   <project path="build/make" name="build" remote="lighthouse" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -56,6 +60,7 @@
   <project path="external/selinux" name="external_selinux" remote="lighthouse" />
   <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="proton" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="lighthouse" />
 
   <!-- Hardware -->
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="arrow" >
@@ -116,6 +121,7 @@
  
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lighthouse" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="lighthouse" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="lighthouse" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="lighthouse"/>
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="proton" />
@@ -128,6 +134,7 @@
 
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="lighthouse"/>
+  <project path="system/bt" name="system_bt" remote="lighthouse"/>
   <project path="system/media" name="system_media" remote="lighthouse" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="lighthouse" />
   <project path="system/update_engine" name="system_update_engine" remote="lighthouse" />
@@ -160,9 +167,13 @@
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arrow" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arrow" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_bluetooth_ext" remote="ppui-caf" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="ppui-caf" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="ppui-caf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_bluetooth-commonsys-intf" remote="ppui-caf" />
 
   <!-- The other guys -->
-  <!-- project path="art" name="art" remote="lighthouse" / -->
+  <project path="art" name="art" remote="lighthouse" />
   <project path="libcore" name="libcore" remote="lighthouse"/>
 
 </manifest> 

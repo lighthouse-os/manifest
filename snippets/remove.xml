@@ -38,6 +38,7 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/arm-optimized-routines" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/qcom/audio" />
@@ -63,6 +64,7 @@
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/modules/Connectivity" />
@@ -71,11 +73,12 @@
 
   <!-- System -->
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/media" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
 
   <!-- The other guys -->  
   <remove-project name="platform/libcore" />
-  <!-- remove-project name="platform/art" / -->
+  <remove-project name="platform/art" />
 </manifest> 
