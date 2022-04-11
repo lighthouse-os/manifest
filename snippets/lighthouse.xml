@@ -10,7 +10,7 @@
 
   <remote  name="proton"
            fetch="https://github.com/protonaosp"
-           revision="sc" />
+           revision="sc-v2" />
 
   <remote  name="lighthouse-gitlab"
            fetch="https://gitlab.com/Stealth1226"
