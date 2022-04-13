@@ -80,5 +80,5 @@
 
   <!-- The other guys -->  
   <remove-project name="platform/libcore" />
-  <remove-project name="platform/art" />
+  <!-- remove-project name="platform/art" / -->
 </manifest> 

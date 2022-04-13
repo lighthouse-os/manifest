@@ -173,7 +173,7 @@
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_bluetooth-commonsys-intf" remote="ppui-caf" />
 
   <!-- The other guys -->
-  <project path="art" name="art" remote="lighthouse" />
+  <!-- project path="art" name="art" remote="lighthouse" / -->
   <project path="libcore" name="libcore" remote="lighthouse"/>
 
 </manifest> 
