@@ -38,7 +38,7 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/external/tinycompress" />
-  <remove-project name="platform/external/arm-optimized-routines" />
+  <!-- remove-project name="platform/external/arm-optimized-routines" / -->
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/qcom/audio" />

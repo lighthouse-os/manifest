@@ -60,7 +60,7 @@
   <project path="external/selinux" name="external_selinux" remote="lighthouse" />
   <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="proton" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
-  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="lighthouse" />
+  <!-- project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="lighthouse" / -->
 
   <!-- Hardware -->
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="arrow" >
