@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+  <remote  name="arrowos"
+           fetch="https://github.com/arrowos"
+           revision="arrow-12.1" />
+
+  <remote  name="arrowos-devices"
+           fetch="https://github.com/arrowos-devices"
+           revision="arrow-12.1" />
+
+  <!-- Hardware -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="arrowos-devices" />
+  
+</manifest>

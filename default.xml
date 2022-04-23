@@ -1109,5 +1109,6 @@
   <include name="snippets/lighthouse.xml" />
   <include name="snippets/pixelexperience.xml" />
   <include name="snippets/lineage.xml" />
+  <include name="snippets/arrow.xml" />
 
 </manifest>

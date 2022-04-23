@@ -15,7 +15,6 @@
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
 
   <!-- Hardware -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pe" />
   <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" groups="qcom,qcom_audio" remote="pe" />
   <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" remote="pe" />
   <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" groups="qcom" remote="pe" />
