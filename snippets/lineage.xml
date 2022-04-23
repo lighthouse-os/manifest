@@ -39,4 +39,7 @@
   <!-- Vendor -->
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="lineage" />
 
+  <!-- Device Settings Resources -->
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />	
+
 </manifest>
